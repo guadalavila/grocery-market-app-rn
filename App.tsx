@@ -1,15 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import React from 'react';
-import Header from './src/components/Header';
-import ButtonPrimary from './src/components/ButtonPrimary';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './src/screens/HomeScreen';
+import DetailScreen from './src/screens/DetailScreen';
+
+const Stack = createNativeStackNavigator();
 
 const App = () => {
     return (
-        <View>
-            <Header text='Market' />
-            <Text>App</Text>
-            <ButtonPrimary label='Press me' onPress={() => {}} />
-        </View>
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName='HomeScreen'>
+                <Stack.Screen name='HomeScreen' component={HomeScreen} />
+                <Stack.Screen name='DetailScreen' component={DetailScreen} />
+            </Stack.Navigator>
+        </NavigationContainer>
     );
 };
 

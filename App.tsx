@@ -1,23 +1,8 @@
-import { StyleSheet } from 'react-native';
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './src/screens/HomeScreen';
-import DetailScreen from './src/screens/DetailScreen';
-
-const Stack = createNativeStackNavigator();
+import MainAppContainer from './src/components/MainAppContainer';
 
 const App = () => {
-    return (
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName='HomeScreen'>
-                <Stack.Screen name='HomeScreen' component={HomeScreen} />
-                <Stack.Screen name='DetailScreen' component={DetailScreen} />
-            </Stack.Navigator>
-        </NavigationContainer>
-    );
+    return <MainAppContainer />;
 };
 
 export default App;
-
-const styles = StyleSheet.create({});

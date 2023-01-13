@@ -11,4 +11,6 @@ export const Colors = {
     greyLight: '#C5C5C5',
     greyUltraLight: '#F7F8FA',
     background: '#FCFDFB',
+    grey: '#9f9f9f',
+    divider: '#EFEEF1',
 };

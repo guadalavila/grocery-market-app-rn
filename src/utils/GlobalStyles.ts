@@ -26,6 +26,12 @@ export const GlobalStyles = StyleSheet.create({
     },
 });
 
+export const flex = (x: number) => {
+    return {
+        flex: x,
+    };
+};
+
 export const Sizes = {
     XS: 4,
     S: 8,
@@ -34,4 +40,14 @@ export const Sizes = {
     XL: 30,
     XXL: 40,
     XXXL: 55,
+};
+
+export const FontSize = {
+    XS: 8,
+    S: 10,
+    M: 14,
+    L: 18,
+    XL: 22,
+    XXL: 26,
+    XXXL: 32,
 };

@@ -4,6 +4,7 @@ import LoginScreen from '../screens/LoginScreen';
 import { CardStyleInterpolators, createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
 import DetailScreen from '../screens/DetailScreen';
+import ProductDetailScreen from '../screens/ProductDetailScreen';
 
 const StackLoggedOut = createStackNavigator<RootStackLogoutParamList>();
 const StackLoggedIn = createStackNavigator<RootStackLoginParamList>();
@@ -31,6 +32,7 @@ export function StackNavigatorLogIn() {
             }}>
             <StackLoggedIn.Screen name={'HomeScreen'} component={HomeScreen} />
             <StackLoggedIn.Screen name={'DetailScreen'} component={DetailScreen} />
+            <StackLoggedIn.Screen name={'ProductDetailScreen'} component={ProductDetailScreen} />
         </StackLoggedIn.Navigator>
     );
 }

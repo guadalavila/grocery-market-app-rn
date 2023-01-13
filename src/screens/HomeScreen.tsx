@@ -6,9 +6,13 @@ import ItemProduct from '../components/ItemProduct/ItemProduct';
 import SearchBar from '../components/SearchBar/SearchBar';
 import Title from '../components/Title/Title';
 import data from '../mock/data.json';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { RootStackLoginParamList } from '../navigation/types';
 import { GlobalStyles } from '../utils/GlobalStyles';
 
-const HomeScreen = () => {
+interface Props extends NativeStackScreenProps<RootStackLoginParamList, 'HomeScreen'> {}
+
+const HomeScreen = ({ navigation }: Props) => {
     return (
         <ScrollView style={GlobalStyles.main} showsVerticalScrollIndicator={false}>
             <HeaderAvatar />
@@ -19,7 +23,9 @@ const HomeScreen = () => {
                 horizontal
                 showsHorizontalScrollIndicator={false}
                 data={data.fruits}
-                renderItem={({ item }) => <ItemProduct product={item} onPress={() => {}} />}
+                renderItem={({ item }) => (
+                    <ItemProduct product={item} onPress={() => navigation.navigate('ProductDetailScreen')} />
+                )}
                 keyExtractor={(item) => item.id}
             />
             <Title label='Verduras' textRight='Ver Más' onPress={() => {}} />
@@ -27,7 +33,9 @@ const HomeScreen = () => {
                 horizontal
                 showsHorizontalScrollIndicator={false}
                 data={data.vegetables}
-                renderItem={({ item }) => <ItemProduct product={item} onPress={() => {}} />}
+                renderItem={({ item }) => (
+                    <ItemProduct product={item} onPress={() => navigation.navigate('ProductDetailScreen')} />
+                )}
                 keyExtractor={(item) => item.id}
             />
         </ScrollView>

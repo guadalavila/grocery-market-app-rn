@@ -5,4 +5,5 @@ export type RootStackLogoutParamList = {
 export type RootStackLoginParamList = {
     HomeScreen: undefined;
     DetailScreen: undefined;
+    ProductDetailScreen: undefined;
 };

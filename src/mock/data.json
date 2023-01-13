@@ -1,0 +1,24 @@
+{
+        "fruits": [
+            {
+                "id": "3ac68afc-c609-48d3-a4f8-fbd91aa97f63",
+                "name": "Bananas",
+                "description": "Organicas",
+                "price": 20.0
+            },
+            {
+                "id": "3ac68afc-c609-48d3-a4f8-fbd91aa97f62",
+                "name": "Naranjas",
+                "description": "Organicas",
+                "price": 60.0
+            }
+        ],
+        "vegetables": [
+            {
+                "id": "3ac68afc-c609-48d3-a4f8-fbd91aa97f67",
+                "name": "Lechuga",
+                "description": "Organicas",
+                "price": 10.0
+            }
+        ]
+}

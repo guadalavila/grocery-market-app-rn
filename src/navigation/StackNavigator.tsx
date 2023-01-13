@@ -3,6 +3,7 @@ import { RootStackLoginParamList, RootStackLogoutParamList } from './types';
 import LoginScreen from '../screens/LoginScreen';
 import { CardStyleInterpolators, createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
+import DetailScreen from '../screens/DetailScreen';
 
 const StackLoggedOut = createStackNavigator<RootStackLogoutParamList>();
 const StackLoggedIn = createStackNavigator<RootStackLoginParamList>();
@@ -29,6 +30,7 @@ export function StackNavigatorLogIn() {
                 headerShown: false,
             }}>
             <StackLoggedIn.Screen name={'HomeScreen'} component={HomeScreen} />
+            <StackLoggedIn.Screen name={'DetailScreen'} component={DetailScreen} />
         </StackLoggedIn.Navigator>
     );
 }

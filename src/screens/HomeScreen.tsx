@@ -1,13 +1,18 @@
 import React from 'react';
-import { FlatList, SafeAreaView } from 'react-native';
+import { FlatList, ScrollView } from 'react-native';
 import Banner from '../components/Banner/Banner';
+import HeaderAvatar from '../components/HeaderAvatar/HeaderAvatar';
 import ItemProduct from '../components/ItemProduct/ItemProduct';
+import SearchBar from '../components/SearchBar/SearchBar';
 import Title from '../components/Title/Title';
 import data from '../mock/data.json';
+import { GlobalStyles } from '../utils/GlobalStyles';
 
 const HomeScreen = () => {
     return (
-        <SafeAreaView>
+        <ScrollView style={GlobalStyles.main} showsVerticalScrollIndicator={false}>
+            <HeaderAvatar />
+            <SearchBar />
             <Banner smallText='Get Up To' bigText='10% OFF' />
             <Title label='Frutas' textRight='Ver Más' onPress={() => {}} />
             <FlatList
@@ -25,7 +30,7 @@ const HomeScreen = () => {
                 renderItem={({ item }) => <ItemProduct product={item} onPress={() => {}} />}
                 keyExtractor={(item) => item.id}
             />
-        </SafeAreaView>
+        </ScrollView>
     );
 };
 

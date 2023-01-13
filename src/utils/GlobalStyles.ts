@@ -21,6 +21,9 @@ export const GlobalStyles = StyleSheet.create({
     justBtw: {
         justifyContent: 'space-between',
     },
+    main: {
+        backgroundColor: Colors.background,
+    },
 });
 
 export const Sizes = {

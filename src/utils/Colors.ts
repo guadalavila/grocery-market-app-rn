@@ -9,4 +9,6 @@ export const Colors = {
     white: '#FFFFFF',
     black: '#000000',
     greyLight: '#C5C5C5',
+    greyUltraLight: '#F7F8FA',
+    background: '#FCFDFB',
 };

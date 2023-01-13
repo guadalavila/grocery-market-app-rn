@@ -10,18 +10,18 @@ export const styles = StyleSheet.create({
         paddingHorizontal: Sizes.L,
         paddingBottom: Sizes.M,
         marginVertical: Sizes.S,
-        marginHorizontal: Sizes.L,
+        marginHorizontal: Sizes.M,
         ...GlobalStyles.shadowCard,
     },
     title: {
         fontWeight: 'bold',
         fontSize: 16,
         color: Colors.black,
-        marginBottom: Sizes.S,
+        marginBottom: Sizes.XS,
     },
     subtitle: {
         color: Colors.greyLight,
-        marginBottom: Sizes.S,
+        marginBottom: Sizes.XS,
     },
     price: {
         color: Colors.black,
@@ -37,7 +37,7 @@ export const styles = StyleSheet.create({
     },
     image: {
         width: 100,
-        height: 120,
+        height: 110,
         alignSelf: 'center',
     },
 });

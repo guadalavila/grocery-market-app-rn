@@ -1,12 +1,12 @@
 import { StyleSheet } from 'react-native';
 import { Colors } from '../../utils/Colors';
-import { GlobalStyles } from '../../utils/GlobalStyles';
+import { Sizes } from '../../utils/GlobalStyles';
 
 export const styles = StyleSheet.create({
     container: {
-        paddingHorizontal: 8,
         marginVertical: 8,
-        marginHorizontal: 8,
+        marginHorizontal: Sizes.M,
+        paddingHorizontal: Sizes.XS,
     },
     label: {
         fontWeight: 'bold',

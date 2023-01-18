@@ -13,4 +13,7 @@ export const Colors = {
     background: '#FCFDFB',
     grey: '#9f9f9f',
     divider: '#EFEEF1',
+    greenLight: '#DEFAE8',
+    redLight: '#FFE8E8',
+    red: '#FF1C1E',
 };

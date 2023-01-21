@@ -33,6 +33,7 @@ export const flex = (x: number) => {
 };
 
 export const Sizes = {
+    XXS: 2,
     XS: 4,
     S: 8,
     M: 16,

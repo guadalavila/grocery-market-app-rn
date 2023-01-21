@@ -18,4 +18,16 @@ export const styles = StyleSheet.create({
         borderRadius: 20,
         padding: Sizes.S,
     },
+    containerBadge: {
+        backgroundColor: Colors.red,
+        position: 'absolute',
+        right: -6,
+        top: -10,
+        borderRadius: 18,
+        paddingHorizontal: Sizes.XS,
+    },
+    badge: {
+        color: Colors.white,
+        fontWeight: '600',
+    },
 });

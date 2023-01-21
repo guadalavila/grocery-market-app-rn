@@ -15,6 +15,9 @@ const HeaderAvatar = ({ onPress }: IHeaderAvatarProps) => {
         <View style={[GlobalStyles.row, GlobalStyles.justBtw, styles.container]}>
             <Text style={styles.title}>{Strings.appName}</Text>
             <TouchableOpacity activeOpacity={0.7} onPress={onPress} style={styles.containerCart}>
+                <View style={styles.containerBadge}>
+                    <Text style={styles.badge}>4</Text>
+                </View>
                 <Icon name='cart' size={22} color={Colors.white} />
             </TouchableOpacity>
         </View>

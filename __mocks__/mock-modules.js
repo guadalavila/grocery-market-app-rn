@@ -18,3 +18,5 @@ jest.mock('react-native-safe-area-context', () => {
         useSafeAreaInsets: jest.fn().mockImplementation(() => inset),
     };
 });
+
+jest.mock('react-native-vector-icons/Ionicons', () => 'MockedIoniconsIcons');

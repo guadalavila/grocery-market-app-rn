@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Title component should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "justifyContent": "space-between",
+      },
+      Object {
+        "marginHorizontal": 16,
+        "marginVertical": 8,
+        "paddingHorizontal": 4,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#000000",
+        "fontSize": 20,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Hello World!
+  </Text>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID="button"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#68B984",
+          "fontSize": 14,
+          "fontWeight": "600",
+          "textDecorationLine": "underline",
+        }
+      }
+    >
+      View More
+    </Text>
+  </View>
+</View>
+`;

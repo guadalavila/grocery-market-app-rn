@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Header should match snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "flexDirection": "row",
+      "paddingHorizontal": 8,
+      "paddingVertical": 16,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "20%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="back-button"
+    >
+      <MockedIoniconsIcons
+        color="#000000"
+        name="chevron-back-outline"
+        size={32}
+        testID="icon"
+      />
+    </View>
+  </View>
+  <Text
+    style={
+      Object {
+        "alignSelf": "center",
+        "color": "#000000",
+        "fontSize": 22,
+        "fontWeight": "900",
+        "textAlign": "center",
+        "width": "60%",
+      }
+    }
+  >
+    Cart
+  </Text>
+</View>
+`;

@@ -13,14 +13,14 @@ interface IItemProductProps {
 
 const ItemProduct = ({ product: { name, description, price, image }, onPress }: IItemProductProps) => {
     return (
-        <TouchableOpacity style={styles.container} activeOpacity={0.7} onPress={onPress}>
-            <Image style={styles.image} resizeMode={'contain'} source={{ uri: image }} />
+        <TouchableOpacity testID='button' style={styles.container} activeOpacity={0.7} onPress={onPress}>
+            <Image testID='image' style={styles.image} resizeMode={'contain'} source={{ uri: image }} />
             <Text style={styles.title}>{name}</Text>
             <Text style={styles.subtitle}>{description}</Text>
             <View style={[GlobalStyles.row, GlobalStyles.justBtw]}>
                 <Text style={styles.price}>${price}</Text>
-                <TouchableOpacity style={styles.buttonAdd} activeOpacity={0.7}>
-                    <Icon name='add' size={22} color={Colors.white} />
+                <TouchableOpacity testID='button-add' style={styles.buttonAdd} activeOpacity={0.7}>
+                    <Icon testID='icon-add' name='add' size={22} color={Colors.white} />
                 </TouchableOpacity>
             </View>
         </TouchableOpacity>

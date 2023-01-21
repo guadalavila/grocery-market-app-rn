@@ -1,21 +1,45 @@
 {
         "fruits": [
             {
-                "id": "3ac68afc-c609-48d3-a4f8-fbd91aa97f63",
+                "id": "6b17d300-943a-11ed-a1eb-0242ac120002",
+                "image": "https://res.cloudinary.com/deoaxotzs/image/upload/v1673720991/grocery-store/banana-_yagtxh.webp",
                 "name": "Bananas",
                 "description": "Organicas",
                 "price": 20.0
             },
             {
-                "id": "3ac68afc-c609-48d3-a4f8-fbd91aa97f62",
+                "id": "6b17d6de-943a-11ed-a1eb-0242ac120002",
+                "image": "https://res.cloudinary.com/deoaxotzs/image/upload/v1673720723/grocery-store/orange_yaoipu.webp",
                 "name": "Naranjas",
                 "description": "Organicas",
                 "price": 60.0
+            },
+            {
+                "id": "6b17d85a-943a-11ed-a1eb-0242ac120002",
+                "image": "https://res.cloudinary.com/deoaxotzs/image/upload/v1673720836/grocery-store/kiwi_x9brvx.webp",
+                "name": "Kiwi",
+                "description": "",
+                "price": 107.0
+            },
+            {
+                "id": "6b17d9c4-943a-11ed-a1eb-0242ac120002",
+                "image": "https://res.cloudinary.com/deoaxotzs/image/upload/v1673721067/grocery-store/pear_rpnwck.webp",
+                "name": "Pera",
+                "description": "",
+                "price": 84.0
+            },
+            {
+                "id": "6c17d9c4-943a-11ed-a1eb-0242ac120002",
+                "image": "https://res.cloudinary.com/deoaxotzs/image/upload/v1673721167/grocery-store/cherry_l9nyeb.webp",
+                "name": "Cereza",
+                "description": "",
+                "price": 110.0
             }
         ],
         "vegetables": [
             {
                 "id": "3ac68afc-c609-48d3-a4f8-fbd91aa97f67",
+                "image": "https://res.cloudinary.com/deoaxotzs/image/upload/v1674267428/grocery-store/lettuce_qcuqlx.webp",
                 "name": "Lechuga",
                 "description": "Organicas",
                 "price": 10.0

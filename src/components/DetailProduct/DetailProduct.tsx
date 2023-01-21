@@ -33,7 +33,7 @@ const DetailProduct = () => {
                 </View>
             </View>
             <View style={flex(1)}>
-                <ButtonPrimary label='22' onPress={() => {}} />
+                <ButtonPrimary label='Agregar al Carrito' onPress={() => {}} />
             </View>
         </View>
     );

@@ -11,10 +11,10 @@ interface IItemProductProps {
     onPress: () => void;
 }
 
-const ItemProduct = ({ product: { name, description, price }, onPress }: IItemProductProps) => {
+const ItemProduct = ({ product: { name, description, price, image }, onPress }: IItemProductProps) => {
     return (
         <TouchableOpacity style={styles.container} activeOpacity={0.7} onPress={onPress}>
-            <Image style={styles.image} resizeMode={'contain'} source={require('../../../assets/images/banana.png')} />
+            <Image style={styles.image} resizeMode={'contain'} source={{ uri: image }} />
             <Text style={styles.title}>{name}</Text>
             <Text style={styles.subtitle}>{description}</Text>
             <View style={[GlobalStyles.row, GlobalStyles.justBtw]}>

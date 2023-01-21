@@ -6,8 +6,13 @@ import { styles } from './styles';
 import { Colors } from '../../utils/Colors';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import ButtonPrimary from '../ButtonPrimary/ButtonPrimary';
+import { Product } from '../../models/Product';
 
-const DetailProduct = () => {
+interface IDetailProductProps {
+    product: Product;
+}
+
+const DetailProduct = ({ product: { name, description, price } }: IDetailProductProps) => {
     return (
         <View style={flex(1)}>
             <View style={flex(5)}>
@@ -15,13 +20,13 @@ const DetailProduct = () => {
                 <View style={styles.container}>
                     <View style={[GlobalStyles.row, GlobalStyles.justBtw, styles.buttons]}>
                         <View style={styles.containerPrice}>
-                            <Text style={styles.priceText}>$ 220,33</Text>
+                            <Text style={styles.priceText}>$ {price}.00</Text>
                         </View>
                         <TouchableOpacity activeOpacity={0.7} onPress={() => {}} style={styles.containerFav}>
                             <Icon size={22} name='heart' color={Colors.red} />
                         </TouchableOpacity>
                     </View>
-                    <Text style={styles.header}>Bananas Organicas</Text>
+                    <Text style={styles.header}>{name}</Text>
                     <View style={styles.containerDesc}>
                         <Text style={styles.descText}>
                             It is a long established fact that a reader will be distracted by the readable content of a

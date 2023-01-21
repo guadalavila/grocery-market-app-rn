@@ -18,23 +18,23 @@ const HomeScreen = ({ navigation }: Props) => {
             <HeaderAvatar />
             <SearchBar />
             <Banner smallText='Get Up To' bigText='10% OFF' />
-            <Title label='Frutas' textRight='Ver Más' onPress={() => {}} />
+            <Title label='Frutas' textRight='Ver Más' onPress={() => navigation.navigate('FruitsScreen')} />
             <FlatList
                 horizontal
                 showsHorizontalScrollIndicator={false}
                 data={data.fruits}
                 renderItem={({ item }) => (
-                    <ItemProduct product={item} onPress={() => navigation.navigate('ProductDetailScreen')} />
+                    <ItemProduct product={item} onPress={() => navigation.navigate('ProductDetailScreen', { item })} />
                 )}
                 keyExtractor={(item) => item.id}
             />
-            <Title label='Verduras' textRight='Ver Más' onPress={() => {}} />
+            <Title label='Verduras' textRight='Ver Más' onPress={() => navigation.navigate('VegetablesScreen')} />
             <FlatList
                 horizontal
                 showsHorizontalScrollIndicator={false}
                 data={data.vegetables}
                 renderItem={({ item }) => (
-                    <ItemProduct product={item} onPress={() => navigation.navigate('ProductDetailScreen')} />
+                    <ItemProduct product={item} onPress={() => navigation.navigate('ProductDetailScreen', { item })} />
                 )}
                 keyExtractor={(item) => item.id}
             />

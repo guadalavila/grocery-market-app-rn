@@ -3,14 +3,14 @@
             {
                 "id": "6b17d300-943a-11ed-a1eb-0242ac120002",
                 "image": "https://res.cloudinary.com/deoaxotzs/image/upload/v1673720991/grocery-store/banana-_yagtxh.webp",
-                "name": "Bananas",
+                "name": "Banana",
                 "description": "Organicas",
                 "price": 20.0
             },
             {
                 "id": "6b17d6de-943a-11ed-a1eb-0242ac120002",
                 "image": "https://res.cloudinary.com/deoaxotzs/image/upload/v1673720723/grocery-store/orange_yaoipu.webp",
-                "name": "Naranjas",
+                "name": "Naranja",
                 "description": "Organicas",
                 "price": 60.0
             },

@@ -1,19 +1,24 @@
 import React from 'react';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Image, StyleSheet, View } from 'react-native';
 import Container from '../components/Container/Container';
 import DetailProduct from '../components/DetailProduct/DetailProduct';
 import Header from '../components/Header/Header';
+import { RootStackLoginParamList } from '../navigation/types';
 import { flex } from '../utils/GlobalStyles';
 
-const ProductDetailScreen = () => {
+interface Props extends NativeStackScreenProps<RootStackLoginParamList, 'ProductDetailScreen'> {}
+
+const ProductDetailScreen = ({ navigation, route }: Props) => {
+    const product = route.params.item;
     return (
         <Container>
             <View style={flex(1)}>
                 <Header text='' backButton />
-                <Image style={styles.image} resizeMode='contain' source={require('../../assets/images/banana.png')} />
+                <Image style={styles.image} resizeMode='contain' source={{ uri: product.image }} />
             </View>
             <View style={styles.detail}>
-                <DetailProduct />
+                <DetailProduct product={product} />
             </View>
         </Container>
     );

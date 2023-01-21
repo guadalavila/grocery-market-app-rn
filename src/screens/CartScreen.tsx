@@ -21,7 +21,7 @@ const CartScreen = () => {
                 renderItem={({ item }) => <ItemCart product={item} />}
                 keyExtractor={(item) => item.id}
             />
-            <ButtonPrimary label='sd' onPress={() => {}} style={styles.button} />
+            <ButtonPrimary label={Strings.checkout} onPress={() => {}} style={styles.button} />
         </Container>
     );
 };

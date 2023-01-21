@@ -5,6 +5,7 @@ export const Strings = {
     addToCart: 'Agregar al carrito',
     search: 'Buscar...',
     cart: 'Carrito',
+    checkout: 'Terminar Compra',
 
     fruits: {
         label: 'Frutas',

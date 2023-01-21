@@ -7,6 +7,7 @@ import DetailScreen from '../screens/DetailScreen';
 import ProductDetailScreen from '../screens/ProductDetailScreen';
 import FruitsScreen from '../screens/FruitsScreen';
 import VegetablesScreen from '../screens/VegetablesScreen';
+import CartScreen from '../screens/CartScreen';
 
 const StackLoggedOut = createStackNavigator<RootStackLogoutParamList>();
 const StackLoggedIn = createStackNavigator<RootStackLoginParamList>();
@@ -37,6 +38,7 @@ export function StackNavigatorLogIn() {
             <StackLoggedIn.Screen name={'ProductDetailScreen'} component={ProductDetailScreen} />
             <StackLoggedIn.Screen name={'FruitsScreen'} component={FruitsScreen} />
             <StackLoggedIn.Screen name={'VegetablesScreen'} component={VegetablesScreen} />
+            <StackLoggedIn.Screen name={'CartScreen'} component={CartScreen} />
         </StackLoggedIn.Navigator>
     );
 }

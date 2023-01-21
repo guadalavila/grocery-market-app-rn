@@ -10,4 +10,5 @@ export type RootStackLoginParamList = {
     ProductDetailScreen: { item: Product };
     FruitsScreen: undefined;
     VegetablesScreen: undefined;
+    CartScreen: undefined;
 };

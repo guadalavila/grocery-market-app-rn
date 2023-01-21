@@ -1,7 +1,6 @@
-import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { Text, View } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
+import { Text, View, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Colors } from '../../utils/Colors';
 import { styles } from './styles';
@@ -17,8 +16,8 @@ const Header = ({ text, backButton }: IHeaderProps) => {
         <View style={styles.container}>
             <View style={styles.containerIcon}>
                 {backButton && (
-                    <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.goBack()}>
-                        <Icon name='chevron-back-outline' size={32} color={Colors.black} />
+                    <TouchableOpacity testID='back-button' activeOpacity={0.7} onPress={() => navigation.goBack()}>
+                        <Icon testID='icon' name='chevron-back-outline' size={32} color={Colors.black} />
                     </TouchableOpacity>
                 )}
             </View>

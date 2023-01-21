@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test DetailProduct component should match with snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "#EFEEF1",
+          "borderRadius": 20,
+          "height": 8,
+          "marginVertical": 16,
+          "width": 70,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginHorizontal": 24,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            Object {
+              "justifyContent": "space-between",
+            },
+            Object {
+              "marginBottom": 16,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#DEFAE8",
+              "borderRadius": 20,
+              "padding": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#68B984",
+                "fontWeight": "bold",
+              }
+            }
+          >
+            $ 
+            20
+            .00
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "#FFE8E8",
+              "borderRadius": 20,
+              "opacity": 1,
+              "padding": 10,
+            }
+          }
+          testID="button-heart"
+        >
+          <MockedIoniconsIcons
+            color="#FF1C1E"
+            name="heart"
+            size={22}
+            testID="icon-heart"
+          />
+        </View>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#000000",
+            "fontSize": 26,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Banana
+      </Text>
+      <View
+        style={
+          Object {
+            "marginVertical": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#9f9f9f",
+              "fontSize": 15,
+              "fontWeight": "500",
+            }
+          }
+        >
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#68B984",
+          "borderRadius": 12,
+          "marginHorizontal": 10,
+          "opacity": 1,
+          "padding": 12,
+        }
+      }
+      testID="button-add-to-cart"
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "textAlign": "center",
+          }
+        }
+      >
+        Agregar al carrito
+      </Text>
+    </View>
+  </View>
+</View>
+`;

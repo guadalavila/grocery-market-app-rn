@@ -12,12 +12,12 @@ interface IItemCartProps {
 const ItemCart = ({ product: { image, name, price } }: IItemCartProps) => {
     return (
         <View style={styles.container}>
-            <Image resizeMode='center' style={styles.image} source={{ uri: image }} />
+            <Image testID='image' resizeMode='center' style={styles.image} source={{ uri: image }} />
             <View style={styles.containerDescription}>
                 <View style={[GlobalStyles.row, GlobalStyles.justBtw]}>
                     <Text style={styles.title}>{name}</Text>
-                    <TouchableOpacity activeOpacity={0.7} onPress={() => {}}>
-                        <Icon name='close' size={24} />
+                    <TouchableOpacity testID='close-button' activeOpacity={0.7} onPress={() => {}}>
+                        <Icon testID='icon-close' name='close' size={24} />
                     </TouchableOpacity>
                 </View>
                 <Text style={styles.price}>${price}.00</Text>

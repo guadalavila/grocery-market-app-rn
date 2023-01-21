@@ -12,7 +12,12 @@ const Banner = ({ smallText, bigText }: IBannerProps) => {
         <View style={[styles.container]}>
             <Text style={styles.smalText}>{smallText}</Text>
             <Text style={styles.bigText}>{bigText}</Text>
-            <Image style={styles.image} resizeMode='center' source={require('../../../assets/images/carrot.png')} />
+            <Image
+                testID='image'
+                style={styles.image}
+                resizeMode='center'
+                source={require('../../../assets/images/carrot.png')}
+            />
         </View>
     );
 };

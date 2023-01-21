@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ItemCart component should match snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 8,
+      "flexDirection": "row",
+      "marginHorizontal": 24,
+      "marginVertical": 8,
+      "padding": 16,
+      "paddingHorizontal": 24,
+    }
+  }
+>
+  <Image
+    resizeMode="center"
+    source={
+      Object {
+        "uri": "https://res.cloudinary.com/deoaxotzs/image/upload/v1673720991/grocery-store/banana-_yagtxh.webp",
+      }
+    }
+    style={
+      Object {
+        "height": 70,
+        "width": 100,
+      }
+    }
+    testID="image"
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "paddingLeft": 16,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+          Object {
+            "justifyContent": "space-between",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#000000",
+            "fontSize": 16,
+            "fontWeight": "900",
+          }
+        }
+      >
+        Banana
+      </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="close-button"
+      >
+        <MockedIoniconsIcons
+          name="close"
+          size={24}
+          testID="icon-close"
+        />
+      </View>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#000000",
+          "fontSize": 18,
+          "fontWeight": "900",
+          "paddingTop": 16,
+          "textAlign": "right",
+        }
+      }
+    >
+      $
+      20
+      .00
+    </Text>
+  </View>
+</View>
+`;

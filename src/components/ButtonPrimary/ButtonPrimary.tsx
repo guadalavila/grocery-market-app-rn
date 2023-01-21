@@ -6,11 +6,12 @@ interface IButtonPrimaryProps {
     label: string;
     onPress: () => void;
     style?: StyleProp<ViewStyle>;
+    testID?: string;
 }
 
-const ButtonPrimary = ({ label, onPress, style = {} }: IButtonPrimaryProps) => {
+const ButtonPrimary = ({ label, onPress, style = {}, testID }: IButtonPrimaryProps) => {
     return (
-        <TouchableOpacity activeOpacity={0.7} style={[styles.container, style]} onPress={onPress}>
+        <TouchableOpacity testID={testID} activeOpacity={0.7} style={[styles.container, style]} onPress={onPress}>
             <Text style={styles.text}>{label}</Text>
         </TouchableOpacity>
     );

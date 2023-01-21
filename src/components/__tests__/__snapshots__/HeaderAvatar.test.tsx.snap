@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test HeaderAvatar component should match with snapchot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "justifyContent": "space-between",
+      },
+      Object {
+        "marginHorizontal": 16,
+        "marginVertical": 24,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#000000",
+        "fontSize": 30,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Grocery Market
+  </Text>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignSelf": "center",
+        "backgroundColor": "#68B984",
+        "borderRadius": 20,
+        "opacity": 1,
+        "padding": 8,
+      }
+    }
+    testID="button"
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#FF1C1E",
+          "borderRadius": 18,
+          "paddingHorizontal": 4,
+          "position": "absolute",
+          "right": -6,
+          "top": -10,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontWeight": "600",
+          }
+        }
+      >
+        4
+      </Text>
+    </View>
+    <MockedIoniconsIcons
+      color="#FFFFFF"
+      name="cart"
+      size={22}
+      testID="icon-cart"
+    />
+  </View>
+</View>
+`;

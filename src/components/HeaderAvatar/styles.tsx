@@ -12,4 +12,10 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 30,
     },
+    containerCart: {
+        alignSelf: 'center',
+        backgroundColor: Colors.primary,
+        borderRadius: 20,
+        padding: Sizes.S,
+    },
 });

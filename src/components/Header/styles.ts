@@ -13,9 +13,9 @@ export const styles = StyleSheet.create({
         width: '20%',
     },
     text: {
-        fontWeight: 'bold',
+        fontWeight: '900',
         color: Colors.black,
-        fontSize: 20,
+        fontSize: 22,
         alignSelf: 'center',
         width: '60%',
         textAlign: 'center',

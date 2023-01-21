@@ -7,6 +7,7 @@ import { Colors } from '../../utils/Colors';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import ButtonPrimary from '../ButtonPrimary/ButtonPrimary';
 import { Product } from '../../models/Product';
+import { Strings } from '../../utils/Strings';
 
 interface IDetailProductProps {
     product: Product;
@@ -38,7 +39,7 @@ const DetailProduct = ({ product: { name, description, price } }: IDetailProduct
                 </View>
             </View>
             <View style={flex(1)}>
-                <ButtonPrimary label='Agregar al Carrito' onPress={() => {}} />
+                <ButtonPrimary label={Strings.addToCart} onPress={() => {}} />
             </View>
         </View>
     );

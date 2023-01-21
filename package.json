@@ -11,17 +11,6 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{ts, tsx}": [
-      "eslint --fix --max-warnings=10",
-      "npm run test"
-    ]
-  },
   "dependencies": {
     "@react-navigation/native": "^6.1.2",
     "@react-navigation/native-stack": "^6.9.8",

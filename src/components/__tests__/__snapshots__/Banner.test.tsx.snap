@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner should match snapshot  1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#CFFDE1",
+        "borderRadius": 24,
+        "height": 120,
+        "marginHorizontal": 16,
+        "marginVertical": 16,
+        "paddingHorizontal": 16,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#2DA32A",
+        "fontSize": 20,
+        "fontWeight": "500",
+        "marginLeft": 24,
+        "marginTop": 24,
+      }
+    }
+  >
+    I am small Text
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#2DA32A",
+        "fontSize": 38,
+        "fontWeight": "900",
+        "textAlign": "center",
+      }
+    }
+  >
+    I am big text
+  </Text>
+  <Image
+    resizeMode="center"
+    source={
+      Object {
+        "testUri": "../../../assets/images/carrot.png",
+      }
+    }
+    style={
+      Object {
+        "height": 100,
+        "left": 10,
+        "position": "absolute",
+        "top": 10,
+      }
+    }
+    testID="image"
+  />
+</View>
+`;

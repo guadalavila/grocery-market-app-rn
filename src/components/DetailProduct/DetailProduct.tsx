@@ -1,10 +1,9 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { flex, GlobalStyles } from '../../utils/GlobalStyles';
 import { styles } from './styles';
 import { Colors } from '../../utils/Colors';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import ButtonPrimary from '../ButtonPrimary/ButtonPrimary';
 import { Product } from '../../models/Product';
 import { Strings } from '../../utils/Strings';
@@ -23,8 +22,12 @@ const DetailProduct = ({ product: { name, description, price } }: IDetailProduct
                         <View style={styles.containerPrice}>
                             <Text style={styles.priceText}>$ {price}.00</Text>
                         </View>
-                        <TouchableOpacity activeOpacity={0.7} onPress={() => {}} style={styles.containerFav}>
-                            <Icon size={22} name='heart' color={Colors.red} />
+                        <TouchableOpacity
+                            testID='button-heart'
+                            activeOpacity={0.7}
+                            onPress={() => {}}
+                            style={styles.containerFav}>
+                            <Icon testID='icon-heart' size={22} name='heart' color={Colors.red} />
                         </TouchableOpacity>
                     </View>
                     <Text style={styles.header}>{name}</Text>
@@ -39,7 +42,7 @@ const DetailProduct = ({ product: { name, description, price } }: IDetailProduct
                 </View>
             </View>
             <View style={flex(1)}>
-                <ButtonPrimary label={Strings.addToCart} onPress={() => {}} />
+                <ButtonPrimary testID='button-add-to-cart' label={Strings.addToCart} onPress={() => {}} />
             </View>
         </View>
     );

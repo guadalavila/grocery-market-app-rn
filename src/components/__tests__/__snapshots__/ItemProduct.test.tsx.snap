@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ItemProduct component should match snapshot 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignContent": "center",
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 8,
+      "elevation": 4,
+      "marginHorizontal": 16,
+      "marginVertical": 8,
+      "opacity": 1,
+      "paddingBottom": 16,
+      "paddingHorizontal": 24,
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.25,
+      "shadowRadius": 3.84,
+    }
+  }
+  testID="button"
+>
+  <Image
+    resizeMode="contain"
+    source={
+      Object {
+        "uri": "https://res.cloudinary.com/deoaxotzs/image/upload/v1673720991/grocery-store/banana-_yagtxh.webp",
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "center",
+        "height": 110,
+        "width": 100,
+      }
+    }
+    testID="image"
+  />
+  <Text
+    style={
+      Object {
+        "color": "#000000",
+        "fontSize": 16,
+        "fontWeight": "bold",
+        "marginBottom": 4,
+      }
+    }
+  >
+    Banana
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#C5C5C5",
+        "marginBottom": 4,
+      }
+    }
+  >
+    Organicas
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {
+          "justifyContent": "space-between",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#000000",
+          "fontSize": 14,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      $
+      20
+    </Text>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#68B984",
+          "borderRadius": 8,
+          "opacity": 1,
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        }
+      }
+      testID="button-add"
+    >
+      <MockedIoniconsIcons
+        color="#FFFFFF"
+        name="add"
+        size={22}
+        testID="icon-add"
+      />
+    </View>
+  </View>
+</View>
+`;

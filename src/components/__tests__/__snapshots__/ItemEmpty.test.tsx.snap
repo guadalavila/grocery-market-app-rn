@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ItemEmpty component should match snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "marginBottom": 30,
+      }
+    }
+  >
+    <MockedIoniconsIcons
+      color="#C5C5C5"
+      name="add"
+      size={130}
+      testID="icon"
+    />
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#9f9f9f",
+        "fontSize": 26,
+        "fontWeight": "bold",
+        "marginHorizontal": 24,
+        "textAlign": "center",
+      }
+    }
+  >
+    Cart is empty!
+  </Text>
+</View>
+`;

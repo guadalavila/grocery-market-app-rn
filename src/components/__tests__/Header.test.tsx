@@ -15,7 +15,7 @@ describe('Test Header', () => {
 
     test('should render icon', () => {
         render(<Header text='Cart' backButton />);
-        screen.debug();
+        // screen.debug();
         expect(screen.getByTestId('icon')).toBeTruthy();
         expect(screen.getByTestId('icon').props.name).toBe('chevron-back-outline');
         expect(screen.getByTestId('icon').props.size).toBe(32);

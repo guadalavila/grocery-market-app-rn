@@ -20,4 +20,8 @@ export const styles = StyleSheet.create({
         width: '60%',
         textAlign: 'center',
     },
+    containerRight: {
+        width: '20%',
+        alignItems: 'flex-end',
+    },
 });

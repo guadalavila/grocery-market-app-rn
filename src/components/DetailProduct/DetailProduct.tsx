@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { flex, GlobalStyles } from '../../utils/GlobalStyles';
@@ -10,9 +10,10 @@ import { Strings } from '../../utils/Strings';
 
 interface IDetailProductProps {
     product: Product;
+    onPress: () => void;
 }
 
-const DetailProduct = ({ product: { name, description, price } }: IDetailProductProps) => {
+const DetailProduct = ({ product: { name, description, price }, onPress }: IDetailProductProps) => {
     return (
         <View style={flex(1)}>
             <View style={flex(5)}>
@@ -42,7 +43,7 @@ const DetailProduct = ({ product: { name, description, price } }: IDetailProduct
                 </View>
             </View>
             <View style={flex(1)}>
-                <ButtonPrimary testID='button-add-to-cart' label={Strings.addToCart} onPress={() => {}} />
+                <ButtonPrimary testID='button-add-to-cart' label={Strings.cart.add} onPress={onPress} />
             </View>
         </View>
     );

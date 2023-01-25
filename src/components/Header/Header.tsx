@@ -8,9 +8,11 @@ import { styles } from './styles';
 interface IHeaderProps {
     text: string;
     backButton: boolean;
+    iconRight?: string;
+    onPressButtonRight?: () => void;
 }
 
-const Header = ({ text, backButton }: IHeaderProps) => {
+const Header = ({ text, backButton, iconRight, onPressButtonRight }: IHeaderProps) => {
     const navigation = useNavigation();
     return (
         <View style={styles.container}>
@@ -22,6 +24,13 @@ const Header = ({ text, backButton }: IHeaderProps) => {
                 )}
             </View>
             <Text style={styles.text}>{text}</Text>
+            {iconRight && onPressButtonRight && (
+                <View style={styles.containerRight}>
+                    <TouchableOpacity testID='button-right' activeOpacity={0.7} onPress={onPressButtonRight}>
+                        <Icon testID='icon-right' name={iconRight} size={32} color={Colors.black} />
+                    </TouchableOpacity>
+                </View>
+            )}
         </View>
     );
 };

@@ -2,10 +2,14 @@ export const Strings = {
     appName: 'Grocery Market',
 
     viewMore: 'Ver Más',
-    addToCart: 'Agregar al carrito',
     search: 'Buscar...',
-    cart: 'Carrito',
-    checkout: 'Terminar Compra',
+
+    cart: {
+        label: 'Carrito',
+        empty: 'No tenes productos en el carrito',
+        checkout: 'Terminar Compra',
+        add: 'Agregar al carrito',
+    },
 
     fruits: {
         label: 'Frutas',

@@ -1,20 +1,27 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import remoteConfig from '@react-native-firebase/remote-config';
 
 function useRemoteConfig() {
+    const [banner, setBanner] = useState({
+        bigText: '',
+        smallText: '',
+    });
     useEffect(() => {
         remoteConfig()
             .setConfigSettings({
-                minimumFetchIntervalMillis: 30000,
+                minimumFetchIntervalMillis: 3000,
             })
             .then(() => remoteConfig().fetchAndActivate())
             .then(() => {
-                const parameters = remoteConfig().getAll();
-                Object.entries(parameters).forEach((elem) => {
-                    const [key, entry] = elem;
-                    console.log(entry);
+                const bigText = remoteConfig().getString('banner_bigText');
+                const smallText = remoteConfig().getString('banner_smallText');
+                setBanner({
+                    ...banner,
+                    bigText,
+                    smallText,
                 });
             });
     }, []);
+    return { ...banner };
 }
 export default useRemoteConfig;

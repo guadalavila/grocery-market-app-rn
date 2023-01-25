@@ -17,13 +17,13 @@ import useRemoteConfig from '../hooks/useRemoteConfig';
 interface Props extends NativeStackScreenProps<RootStackLoginParamList, 'HomeScreen'> {}
 
 const HomeScreen = ({ navigation }: Props) => {
-    useRemoteConfig();
+    const { smallText, bigText } = useRemoteConfig();
     return (
         <Container background={Colors.white}>
             <HeaderAvatar onPress={() => navigation.navigate('CartScreen')} />
             <ScrollView style={GlobalStyles.main} showsVerticalScrollIndicator={false}>
                 <SearchBar />
-                <Banner smallText='Get Up To' bigText='10% OFF' />
+                {smallText && bigText && <Banner smallText={smallText} bigText={bigText} />}
                 <Title
                     label={Strings.fruits.label}
                     textRight={Strings.viewMore}

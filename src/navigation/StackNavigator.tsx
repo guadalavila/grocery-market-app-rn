@@ -8,6 +8,7 @@ import ProductDetailScreen from '../screens/ProductDetailScreen';
 import FruitsScreen from '../screens/FruitsScreen';
 import VegetablesScreen from '../screens/VegetablesScreen';
 import CartScreen from '../screens/CartScreen';
+import CheckoutScreen from '../screens/CheckoutScreen';
 
 const StackLoggedOut = createStackNavigator<RootStackLogoutParamList>();
 const StackLoggedIn = createStackNavigator<RootStackLoginParamList>();
@@ -39,6 +40,7 @@ export function StackNavigatorLogIn() {
             <StackLoggedIn.Screen name={'FruitsScreen'} component={FruitsScreen} />
             <StackLoggedIn.Screen name={'VegetablesScreen'} component={VegetablesScreen} />
             <StackLoggedIn.Screen name={'CartScreen'} component={CartScreen} />
+            <StackLoggedIn.Screen name={'CheckoutScreen'} component={CheckoutScreen} />
         </StackLoggedIn.Navigator>
     );
 }

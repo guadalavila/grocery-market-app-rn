@@ -12,7 +12,7 @@ import ItemEmpty from '../components/ItemEmpty/ItemEmpty';
 
 interface Props extends NativeStackScreenProps<RootStackLoginParamList, 'CartScreen'> {}
 
-const CartScreen = () => {
+const CartScreen = ({ navigation }: Props) => {
     const { deleteCart, cart } = useContext(CartContext);
     return (
         <Container>
@@ -25,7 +25,11 @@ const CartScreen = () => {
                         renderItem={({ item }) => <ItemCart product={item} />}
                         keyExtractor={(item) => item.id}
                     />
-                    <ButtonPrimary label={Strings.cart.checkout} onPress={deleteCart} style={styles.button} />
+                    <ButtonPrimary
+                        label={Strings.cart.checkout}
+                        onPress={() => navigation.navigate('CheckoutScreen')}
+                        style={styles.button}
+                    />
                 </>
             ) : (
                 <ItemEmpty icon='cart-outline' message={Strings.cart.empty} />

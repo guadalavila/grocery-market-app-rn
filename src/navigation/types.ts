@@ -11,4 +11,5 @@ export type RootStackLoginParamList = {
     FruitsScreen: undefined;
     VegetablesScreen: undefined;
     CartScreen: undefined;
+    CheckoutScreen: undefined;
 };

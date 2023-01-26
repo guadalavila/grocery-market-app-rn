@@ -24,10 +24,10 @@ export const styles = StyleSheet.create({
         right: -6,
         top: -10,
         borderRadius: 18,
-        paddingHorizontal: Sizes.XS,
     },
     badge: {
         color: Colors.white,
         fontWeight: '600',
+        paddingHorizontal: Sizes.XXS,
     },
 });

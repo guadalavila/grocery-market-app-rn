@@ -55,7 +55,6 @@ exports[`test HeaderAvatar component should match with snapchot 1`] = `
         Object {
           "backgroundColor": "#FF1C1E",
           "borderRadius": 18,
-          "paddingHorizontal": 4,
           "position": "absolute",
           "right": -6,
           "top": -10,
@@ -67,6 +66,7 @@ exports[`test HeaderAvatar component should match with snapchot 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontWeight": "600",
+            "paddingHorizontal": 2,
           }
         }
       >

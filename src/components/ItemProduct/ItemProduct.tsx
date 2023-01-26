@@ -2,9 +2,11 @@ import React, { useContext } from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { CartContext } from '../../context/cart-context';
+import { UtilContext } from '../../context/util-context';
 import { Product } from '../../models/Product';
 import { Colors } from '../../utils/Colors';
 import { GlobalStyles } from '../../utils/GlobalStyles';
+import { Strings } from '../../utils/Strings';
 import { styles } from './styles';
 
 interface IItemProductProps {
@@ -14,8 +16,12 @@ interface IItemProductProps {
 
 const ItemProduct = ({ product, onPress }: IItemProductProps) => {
     const { addProductToCart } = useContext(CartContext);
+    const { setMessageToast, setShowToast } = useContext(UtilContext);
+
     const addProduct = () => {
         addProductToCart(product);
+        setShowToast(true);
+        setMessageToast(Strings.addedProduct);
     };
 
     return (

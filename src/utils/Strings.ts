@@ -11,6 +11,8 @@ export const Strings = {
         add: 'Agregar al carrito',
     },
 
+    addedProduct: 'Producto Agregado!',
+
     fruits: {
         label: 'Frutas',
     },

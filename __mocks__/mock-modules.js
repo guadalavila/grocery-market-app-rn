@@ -20,3 +20,7 @@ jest.mock('react-native-safe-area-context', () => {
 });
 
 jest.mock('react-native-vector-icons/Ionicons', () => 'MockedIoniconsIcons');
+
+jest.mock('@react-native-async-storage/async-storage', () =>
+    require('@react-native-async-storage/async-storage/jest/async-storage-mock'),
+);

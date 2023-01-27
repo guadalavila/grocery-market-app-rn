@@ -7,13 +7,16 @@ import { Colors } from '../../utils/Colors';
 import ButtonPrimary from '../ButtonPrimary/ButtonPrimary';
 import { Product } from '../../models/Product';
 import { Strings } from '../../utils/Strings';
+import { FavsContext } from '../../context/favs-context';
 
 interface IDetailProductProps {
     product: Product;
     onPress: () => void;
 }
 
-const DetailProduct = ({ product: { name, description, price }, onPress }: IDetailProductProps) => {
+const DetailProduct = ({ product: { name, description, price, id }, onPress }: IDetailProductProps) => {
+    const { addRemoveProduct, isFavorite } = useContext(FavsContext);
+
     return (
         <View style={flex(1)}>
             <View style={flex(5)}>
@@ -26,9 +29,14 @@ const DetailProduct = ({ product: { name, description, price }, onPress }: IDeta
                         <TouchableOpacity
                             testID='button-heart'
                             activeOpacity={0.7}
-                            onPress={() => {}}
+                            onPress={() => addRemoveProduct(id)}
                             style={styles.containerFav}>
-                            <Icon testID='icon-heart' size={22} name='heart' color={Colors.red} />
+                            <Icon
+                                testID='icon-heart'
+                                size={22}
+                                name={isFavorite(id) ? 'heart' : 'heart-outline'}
+                                color={Colors.red}
+                            />
                         </TouchableOpacity>
                     </View>
                     <Text style={styles.header}>{name}</Text>

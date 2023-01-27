@@ -13,11 +13,13 @@ import { Strings } from '../utils/Strings';
 import Container from '../components/Container/Container';
 import { Colors } from '../utils/Colors';
 import useRemoteConfig from '../hooks/useRemoteConfig';
+import useFavorite from '../hooks/useFavorite';
 
 interface Props extends NativeStackScreenProps<RootStackLoginParamList, 'HomeScreen'> {}
 
 const HomeScreen = ({ navigation }: Props) => {
     const { smallText, bigText } = useRemoteConfig();
+    useFavorite();
     return (
         <Container background={Colors.white}>
             <HeaderAvatar onPress={() => navigation.navigate('CartScreen')} />

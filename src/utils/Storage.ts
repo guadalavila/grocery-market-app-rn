@@ -9,10 +9,8 @@ export const storeData = async (key: string, value: string) => {
 
 export const getData = async (key: string) => {
     try {
-        const value = await AsyncStorage.getItem(key);
-        if (value !== null) {
-            // value previously stored
-        }
+        const data = await AsyncStorage.getItem(key);
+        return data ? JSON.parse(data) : undefined;
     } catch (e) {
         // error reading value
     }

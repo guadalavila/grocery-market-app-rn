@@ -11,37 +11,38 @@ describe('test DetailProduct component', () => {
         description: 'Organicas',
         price: 20.0,
     };
+    const onPressMock = jest.fn();
 
     test('should match with snapshot', () => {
-        const component = render(<DetailProduct product={productMock} />);
+        const component = render(<DetailProduct product={productMock} onPress={onPressMock} />);
         expect(component).toMatchSnapshot();
     });
 
     test('should render component', () => {
-        render(<DetailProduct product={productMock} />);
+        render(<DetailProduct product={productMock} onPress={onPressMock} />);
         expect(screen).toBeTruthy();
     });
     test('should render all texts', () => {
-        render(<DetailProduct product={productMock} />);
+        render(<DetailProduct product={productMock} onPress={onPressMock} />);
         expect(screen.getByText(productMock.name)).toBeTruthy();
         expect(screen.getByText(`$ ${productMock.price}.00`)).toBeTruthy();
     });
 
     test('should render icon', () => {
-        render(<DetailProduct product={productMock} />);
+        render(<DetailProduct product={productMock} onPress={onPressMock} />);
         expect(screen.getByTestId('icon-heart')).toBeTruthy();
-        expect(screen.getByTestId('icon-heart').props.name).toBe('heart');
+        expect(screen.getByTestId('icon-heart').props.name).toBe('heart-outline');
         expect(screen.getByTestId('icon-heart').props.size).toBe(22);
         expect(screen.getByTestId('icon-heart').props.color).toBe(Colors.red);
     });
 
     test('should render button heart', () => {
-        render(<DetailProduct product={productMock} />);
+        render(<DetailProduct product={productMock} onPress={onPressMock} />);
         expect(screen.getByTestId('button-heart')).toBeTruthy();
     });
 
     test('should render add to cart button', () => {
-        render(<DetailProduct product={productMock} />);
+        render(<DetailProduct product={productMock} onPress={onPressMock} />);
         expect(screen.getByTestId('button-add-to-cart')).toBeTruthy();
     });
 });

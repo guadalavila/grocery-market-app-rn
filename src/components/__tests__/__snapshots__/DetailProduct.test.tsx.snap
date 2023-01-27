@@ -95,7 +95,7 @@ exports[`test DetailProduct component should match with snapshot 1`] = `
         >
           <MockedIoniconsIcons
             color="#FF1C1E"
-            name="heart"
+            name="heart-outline"
             size={22}
             testID="icon-heart"
           />
@@ -148,7 +148,7 @@ exports[`test DetailProduct component should match with snapshot 1`] = `
       }
       accessible={true}
       collapsable={false}
-      focusable={false}
+      focusable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}

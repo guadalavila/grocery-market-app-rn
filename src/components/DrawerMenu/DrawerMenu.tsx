@@ -4,18 +4,24 @@ import { Text } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from './styles';
 import { Strings } from '../../utils/Strings';
+import { Sizes, TextStyle } from '../../utils/GlobalStyles';
+import Box from '../Box/Box';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const DrawerMenu = ({ navigation }: any) => {
     return (
-        <DrawerContentScrollView>
-            <TouchableOpacity style={styles.item} activeOpacity={0.7} onPress={() => navigation.navigate('CartScreen')}>
-                <Text>{Strings.cart.label}</Text>
-            </TouchableOpacity>
+        <DrawerContentScrollView style={styles.menu}>
+            <Box mb={40} ph={Sizes.M}>
+                <Text style={TextStyle.h1}>{Strings.hello}</Text>
+            </Box>
             <TouchableOpacity
-                style={styles.item}
+                style={styles.itemMenu}
                 activeOpacity={0.7}
                 onPress={() => navigation.navigate('FavoritesScreen')}>
-                <Text>{Strings.favorites.label}</Text>
+                <Box flexDirection={'row'} justifyContent='space-between'>
+                    <Text style={TextStyle.label}>{Strings.favorites.label}</Text>
+                    <Icon name='chevron-forward-outline' size={20} />
+                </Box>
             </TouchableOpacity>
         </DrawerContentScrollView>
     );

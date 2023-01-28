@@ -52,3 +52,43 @@ export const FontSize = {
     XXL: 26,
     XXXL: 32,
 };
+
+export const TextStyle = StyleSheet.create({
+    h1: {
+        fontSize: FontSize.XXXL,
+        fontWeight: '900',
+        color: Colors.black,
+    },
+    h2: {
+        fontSize: FontSize.XXL,
+        fontWeight: '700',
+        color: Colors.black,
+    },
+    h3: {
+        fontSize: FontSize.XL,
+        fontWeight: '500',
+        color: Colors.black,
+    },
+    label: {
+        fontSize: 16,
+        fontWeight: '500',
+        color: Colors.grey400,
+    },
+});
+
+export const mt = (x: number) => {
+    return {
+        marginTop: x,
+    };
+};
+export const mb = (x: number) => {
+    return {
+        marginBottom: x,
+    };
+};
+
+export const mv = (x: number) => {
+    return {
+        marginVertical: x,
+    };
+};

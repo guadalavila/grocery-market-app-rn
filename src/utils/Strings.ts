@@ -1,5 +1,6 @@
 export const Strings = {
     appName: 'Grocery Market',
+    hello: 'Hola!',
 
     viewMore: 'Ver Más',
     search: 'Buscar...',
@@ -21,7 +22,7 @@ export const Strings = {
     },
 
     favorites: {
-        label: 'Favoritos',
+        label: 'Mis Favoritos',
         empty: 'No tenes productos como favoritos',
     },
 };

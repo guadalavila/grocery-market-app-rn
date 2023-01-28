@@ -19,4 +19,8 @@ export const Strings = {
     vegetables: {
         label: 'Verduras',
     },
+
+    favorites: {
+        label: 'Favoritos',
+    },
 };

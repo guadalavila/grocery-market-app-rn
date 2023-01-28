@@ -1,22 +1,20 @@
 import React from 'react';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { StyleSheet, Text } from 'react-native';
+import { Text } from 'react-native';
 import { HomeStackParamList } from '../navigation/types';
 import Container from '../components/Container/Container';
 import Header from '../components/Header/Header';
 import { Strings } from '../utils/Strings';
 
-interface Props extends NativeStackScreenProps<HomeStackParamList, 'CheckoutScreen'> {}
+interface Props extends NativeStackScreenProps<HomeStackParamList, 'FavoritesScreen'> {}
 
-const CheckoutScreen = () => {
+const FavoritesScreen = ({}: Props) => {
     return (
         <Container>
-            <Header text={Strings.cart.checkout} backButton />
-            <Text>CheckoutScreen</Text>
+            <Header text={Strings.favorites.label} backButton />
+            <Text>FavoritesScreen</Text>
         </Container>
     );
 };
 
-export default CheckoutScreen;
-
-const styles = StyleSheet.create({});
+export default FavoritesScreen;

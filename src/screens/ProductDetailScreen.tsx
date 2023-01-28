@@ -4,13 +4,13 @@ import { Image, StyleSheet, View } from 'react-native';
 import Container from '../components/Container/Container';
 import DetailProduct from '../components/DetailProduct/DetailProduct';
 import Header from '../components/Header/Header';
-import { RootStackLoginParamList } from '../navigation/types';
+import { HomeStackParamList } from '../navigation/types';
 import { flex } from '../utils/GlobalStyles';
 import { CartContext } from '../context/cart-context';
 import { UtilContext } from '../context/util-context';
 import { Strings } from '../utils/Strings';
 
-interface Props extends NativeStackScreenProps<RootStackLoginParamList, 'ProductDetailScreen'> {}
+interface Props extends NativeStackScreenProps<HomeStackParamList, 'ProductDetailScreen'> {}
 
 const ProductDetailScreen = ({ navigation, route }: Props) => {
     const product = route.params.item;

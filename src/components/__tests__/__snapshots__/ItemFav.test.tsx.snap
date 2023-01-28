@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ItemFav component should match with snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 8,
+      "flexDirection": "row",
+      "marginHorizontal": 24,
+      "marginVertical": 8,
+      "padding": 16,
+      "paddingHorizontal": 24,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "justifyContent": "space-between",
+        },
+      ]
+    }
+  >
+    <Image
+      resizeMode="center"
+      source={
+        Object {
+          "uri": "https://res.cloudinary.com/deoaxotzs/image/upload/v1673720991/grocery-store/banana-_yagtxh.webp",
+        }
+      }
+      style={
+        Object {
+          "height": 70,
+          "width": 100,
+        }
+      }
+      testID="image"
+    />
+    <Text
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#000000",
+          "fontSize": 16,
+          "fontWeight": "900",
+        }
+      }
+    >
+      Banana
+    </Text>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "#FFE8E8",
+          "borderRadius": 20,
+          "opacity": 1,
+          "padding": 10,
+        }
+      }
+      testID="btn-fav"
+    >
+      <MockedIoniconsIcons
+        color="#FF1C1E"
+        name="heart"
+        size={20}
+        testID="icon-heart"
+      />
+    </View>
+  </View>
+</View>
+`;

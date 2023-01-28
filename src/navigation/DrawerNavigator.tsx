@@ -11,11 +11,10 @@ const DrawerNavigator = () => {
         <Drawer.Navigator
             screenOptions={{
                 headerShown: false,
-                // drawerStyle: styles.menu,
             }}
             drawerContent={(props) => <DrawerMenu {...props} />}
             initialRouteName={'HomeStack'}>
-            <Drawer.Screen options={{ swipeEnabled: true }} name={'HomeStack'} component={HomeNavigator} />
+            <Drawer.Screen options={{ swipeEnabled: false }} name={'HomeStack'} component={HomeNavigator} />
         </Drawer.Navigator>
     );
 };

@@ -17,6 +17,32 @@ exports[`test HeaderAvatar component should match with snapchot 1`] = `
     ]
   }
 >
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignSelf": "center",
+        "opacity": 1,
+      }
+    }
+    testID="menu"
+  >
+    <MockedIoniconsIcons
+      color="#68B984"
+      name="menu"
+      size={28}
+      testID="icon-menu"
+    />
+  </View>
   <Text
     style={
       Object {

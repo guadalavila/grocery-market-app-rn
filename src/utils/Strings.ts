@@ -1,7 +1,7 @@
 export const Strings = {
     appName: 'Grocery Market',
     hello: 'Hola!',
-
+    welcome: 'Bienvenido!',
     viewMore: 'Ver Más',
     search: 'Buscar...',
 

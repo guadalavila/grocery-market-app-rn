@@ -1,5 +1,5 @@
-import { fireEvent, render, screen } from '@testing-library/react-native';
 import React from 'react';
+import { fireEvent, render, screen } from '@testing-library/react-native';
 import { Colors } from '../../utils/Colors';
 import { Strings } from '../../utils/Strings';
 import HeaderAvatar from '../HeaderAvatar/HeaderAvatar';

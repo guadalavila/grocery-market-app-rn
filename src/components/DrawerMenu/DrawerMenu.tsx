@@ -12,7 +12,7 @@ const DrawerMenu = ({ navigation }: any) => {
     return (
         <DrawerContentScrollView style={styles.menu}>
             <Box mb={40} ph={Sizes.M}>
-                <Text style={TextStyle.h1}>{Strings.hello}</Text>
+                <Text style={TextStyle.h1}>{Strings.welcome}</Text>
             </Box>
             <TouchableOpacity
                 style={styles.itemMenu}

@@ -1,37 +1,40 @@
 import React from 'react';
 import { createContext, useState } from 'react';
+import { Product } from '../models/Product';
 import { STORAGE_KEY } from '../utils/Constants';
 import { getData } from '../utils/Storage';
 
 export const FavsContext = createContext<{
     setData: any;
-    addRemoveProduct: React.Dispatch<string>;
+    addRemoveProduct: React.Dispatch<Product>;
     isFavorite: any;
+    favorites: Product[];
 }>({
     setData: () => {},
     addRemoveProduct: () => {},
     isFavorite: () => {},
+    favorites: [],
 });
 
 export const FavsProvider = ({ children }: any) => {
-    const [favs, setFavs] = useState<string[]>([]);
+    const [favs, setFavs] = useState<Product[]>([]);
 
     async function setData() {
         const favs_ = (await getData(STORAGE_KEY.FAVORITE)) ?? [];
         setFavs([...favs_]);
     }
 
-    function addRemoveProduct(id: string) {
-        if (favs.find((x) => x === id)) {
-            const aux = favs.filter((x) => x !== id);
+    function addRemoveProduct(product: Product) {
+        if (favs.find((x) => x.id === product.id)) {
+            const aux = favs.filter((x) => x.id !== product.id);
             setFavs([...aux]);
         } else {
-            setFavs([...favs, id]);
+            setFavs([...favs, product]);
         }
     }
 
-    function isFavorite(id: string): boolean {
-        return favs.find((x) => x === id) ? true : false;
+    function isFavorite(product: Product): boolean {
+        return favs.find((x) => x.id === product.id) ? true : false;
     }
 
     return (
@@ -40,6 +43,7 @@ export const FavsProvider = ({ children }: any) => {
                 setData,
                 addRemoveProduct,
                 isFavorite,
+                favorites: favs,
             }}>
             {children}
         </FavsContext.Provider>

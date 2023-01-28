@@ -22,5 +22,6 @@ export const Strings = {
 
     favorites: {
         label: 'Favoritos',
+        empty: 'No tenes productos como favoritos',
     },
 };

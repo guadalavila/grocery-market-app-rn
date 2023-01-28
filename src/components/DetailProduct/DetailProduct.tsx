@@ -14,7 +14,7 @@ interface IDetailProductProps {
     onPress: () => void;
 }
 
-const DetailProduct = ({ product: { name, description, price, id }, onPress }: IDetailProductProps) => {
+const DetailProduct = ({ product, onPress }: IDetailProductProps) => {
     const { addRemoveProduct, isFavorite } = useContext(FavsContext);
 
     return (
@@ -24,22 +24,22 @@ const DetailProduct = ({ product: { name, description, price, id }, onPress }: I
                 <View style={styles.container}>
                     <View style={[GlobalStyles.row, GlobalStyles.justBtw, styles.buttons]}>
                         <View style={styles.containerPrice}>
-                            <Text style={styles.priceText}>$ {price}.00</Text>
+                            <Text style={styles.priceText}>$ {product.price}.00</Text>
                         </View>
                         <TouchableOpacity
                             testID='button-heart'
                             activeOpacity={0.7}
-                            onPress={() => addRemoveProduct(id)}
+                            onPress={() => addRemoveProduct(product)}
                             style={styles.containerFav}>
                             <Icon
                                 testID='icon-heart'
                                 size={22}
-                                name={isFavorite(id) ? 'heart' : 'heart-outline'}
+                                name={isFavorite(product) ? 'heart' : 'heart-outline'}
                                 color={Colors.red}
                             />
                         </TouchableOpacity>
                     </View>
-                    <Text style={styles.header}>{name}</Text>
+                    <Text style={styles.header}>{product.name}</Text>
                     <View style={styles.containerDesc}>
                         <Text style={styles.descText}>
                             It is a long established fact that a reader will be distracted by the readable content of a

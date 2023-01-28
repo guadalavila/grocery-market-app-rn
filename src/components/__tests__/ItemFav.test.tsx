@@ -12,6 +12,11 @@ describe('test ItemFav component', () => {
         price: 20.0,
     };
 
+    test('should match with snapshot', () => {
+        const component = render(<ItemFav product={productMock} />);
+        expect(component).toMatchSnapshot();
+    });
+
     test('should render component', () => {
         render(<ItemFav product={productMock} />);
         expect(screen).toBeTruthy();

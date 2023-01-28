@@ -1,9 +1,9 @@
 import React from 'react';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { StyleSheet, Text, View } from 'react-native';
-import { RootStackLoginParamList } from '../navigation/types';
+import { HomeStackParamList } from '../navigation/types';
 
-interface Props extends NativeStackScreenProps<RootStackLoginParamList, 'FruitsScreen'> {}
+interface Props extends NativeStackScreenProps<HomeStackParamList, 'FruitsScreen'> {}
 
 const FruitsScreen = () => {
     return (

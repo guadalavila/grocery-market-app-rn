@@ -5,6 +5,14 @@ export type RootStackLogoutParamList = {
 };
 
 export type RootStackLoginParamList = {
+    DrawerNavigator: undefined;
+};
+
+export type DrawerStackParamList = {
+    HomeStack: undefined;
+};
+
+export type HomeStackParamList = {
     HomeScreen: undefined;
     DetailScreen: undefined;
     ProductDetailScreen: { item: Product };
@@ -12,4 +20,5 @@ export type RootStackLoginParamList = {
     VegetablesScreen: undefined;
     CartScreen: undefined;
     CheckoutScreen: undefined;
+    FavoritesScreen: undefined;
 };

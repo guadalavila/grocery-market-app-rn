@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { StyleSheet, FlatList } from 'react-native';
-import { RootStackLoginParamList } from '../navigation/types';
+import { HomeStackParamList } from '../navigation/types';
 import Container from '../components/Container/Container';
 import Header from '../components/Header/Header';
 import { Strings } from '../utils/Strings';
@@ -10,7 +10,7 @@ import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary';
 import { CartContext } from '../context/cart-context';
 import ItemEmpty from '../components/ItemEmpty/ItemEmpty';
 
-interface Props extends NativeStackScreenProps<RootStackLoginParamList, 'CartScreen'> {}
+interface Props extends NativeStackScreenProps<HomeStackParamList, 'CartScreen'> {}
 
 const CartScreen = ({ navigation }: Props) => {
     const { deleteCart, cart } = useContext(CartContext);

@@ -24,7 +24,6 @@ export function StackNavigatorLogOut() {
 
 export function StackNavigatorLogIn() {
     const { messageToast, showToast } = useContext(UtilContext);
-
     return (
         <>
             <StackLoggedIn.Navigator

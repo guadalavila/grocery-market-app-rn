@@ -9,6 +9,8 @@ import VegetablesScreen from '../screens/VegetablesScreen';
 import CartScreen from '../screens/CartScreen';
 import CheckoutScreen from '../screens/CheckoutScreen';
 import FavoritesScreen from '../screens/FavoritesScreen';
+import AddressScren from '../screens/AddressScren';
+import OrdersScreen from '../screens/OrdersScreen';
 
 const StackHome = createStackNavigator<HomeStackParamList>();
 const HomeNavigator = () => {
@@ -27,6 +29,8 @@ const HomeNavigator = () => {
             <StackHome.Screen name={'CartScreen'} component={CartScreen} />
             <StackHome.Screen name={'CheckoutScreen'} component={CheckoutScreen} />
             <StackHome.Screen name={'FavoritesScreen'} component={FavoritesScreen} />
+            <StackHome.Screen name={'AddressScreen'} component={AddressScren} />
+            <StackHome.Screen name={'OrdersScreen'} component={OrdersScreen} />
         </StackHome.Navigator>
     );
 };

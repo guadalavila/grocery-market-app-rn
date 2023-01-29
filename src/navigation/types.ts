@@ -21,4 +21,6 @@ export type HomeStackParamList = {
     CartScreen: undefined;
     CheckoutScreen: undefined;
     FavoritesScreen: undefined;
+    AddressScreen: undefined;
+    OrdersScreen: undefined;
 };

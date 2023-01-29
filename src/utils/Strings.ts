@@ -25,4 +25,10 @@ export const Strings = {
         label: 'Mis Favoritos',
         empty: 'No tenes productos como favoritos',
     },
+    address: {
+        label: 'Direcciones',
+    },
+    orders: {
+        label: 'Pedidos',
+    },
 };

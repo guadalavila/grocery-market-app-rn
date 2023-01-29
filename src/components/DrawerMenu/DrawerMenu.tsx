@@ -23,6 +23,24 @@ const DrawerMenu = ({ navigation }: any) => {
                     <Icon name='chevron-forward-outline' size={20} />
                 </Box>
             </TouchableOpacity>
+            <TouchableOpacity
+                style={styles.itemMenu}
+                activeOpacity={0.7}
+                onPress={() => navigation.navigate('AddressScreen')}>
+                <Box flexDirection={'row'} justifyContent='space-between'>
+                    <Text style={TextStyle.label}>{Strings.address.label}</Text>
+                    <Icon name='chevron-forward-outline' size={20} />
+                </Box>
+            </TouchableOpacity>
+            <TouchableOpacity
+                style={styles.itemMenu}
+                activeOpacity={0.7}
+                onPress={() => navigation.navigate('OrdersScreen')}>
+                <Box flexDirection={'row'} justifyContent='space-between'>
+                    <Text style={TextStyle.label}>{Strings.orders.label}</Text>
+                    <Icon name='chevron-forward-outline' size={20} />
+                </Box>
+            </TouchableOpacity>
         </DrawerContentScrollView>
     );
 };

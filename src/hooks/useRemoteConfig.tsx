@@ -20,6 +20,12 @@ function useRemoteConfig() {
                     bigText,
                     smallText,
                 });
+            })
+            .catch(() => {
+                setBanner({
+                    bigText: 'Bienvenido',
+                    smallText: '',
+                });
             });
     }, []);
     return { ...banner };

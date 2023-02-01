@@ -85,6 +85,11 @@ exports[`test ItemCart component should match snapshot 1`] = `
         />
       </View>
     </View>
+    <Text>
+      2
+       
+      unidades
+    </Text>
     <Text
       style={
         Object {

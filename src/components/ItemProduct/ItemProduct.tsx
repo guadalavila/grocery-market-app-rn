@@ -19,7 +19,7 @@ const ItemProduct = ({ product, onPress }: IItemProductProps) => {
     const { setMessageToast, setShowToast } = useContext(UtilContext);
 
     const addProduct = () => {
-        addProductToCart(product);
+        addProductToCart({ product, quantity: 1 });
         setShowToast(true);
         setMessageToast(Strings.addedProduct);
     };

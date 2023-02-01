@@ -13,7 +13,7 @@ import ItemEmpty from '../components/ItemEmpty/ItemEmpty';
 interface Props extends NativeStackScreenProps<HomeStackParamList, 'CartScreen'> {}
 
 const CartScreen = ({ navigation }: Props) => {
-    const { deleteCart, cart } = useContext(CartContext);
+    const { deleteCart, cart, removeProduct } = useContext(CartContext);
     return (
         <Container>
             <Header text={Strings.cart.label} backButton iconRight='trash-bin' onPressButtonRight={deleteCart} />
@@ -22,8 +22,10 @@ const CartScreen = ({ navigation }: Props) => {
                     <FlatList
                         showsVerticalScrollIndicator={false}
                         data={cart}
-                        renderItem={({ item }) => <ItemCart product={item} />}
-                        keyExtractor={(item) => item.id}
+                        renderItem={({ item }) => (
+                            <ItemCart item={item} onPressClose={() => removeProduct(item.product.id)} />
+                        )}
+                        keyExtractor={(item) => item.product.id}
                     />
                     <ButtonPrimary
                         label={Strings.cart.checkout}

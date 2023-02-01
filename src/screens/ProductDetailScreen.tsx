@@ -20,7 +20,7 @@ const ProductDetailScreen = ({ navigation, route }: Props) => {
     const handleAddProduct = () => {
         setMessageToast(Strings.addedProduct);
         setShowToast(true);
-        addProductToCart(product);
+        addProductToCart({ product, quantity: 1 });
     };
 
     return (

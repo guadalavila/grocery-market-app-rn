@@ -1,6 +1,33 @@
 import React from 'react';
 import { View } from 'react-native';
 
+// enum SIZE {
+//     'none' = 0,
+//     'xxs' = 2,
+//     'xs' = 4,
+//     's' = 6,
+//     'm' = 8,
+//     'l' = 12,
+//     'xl' = 16,
+//     'xxl' = 22,
+//     'xxxl' = 30,
+// }
+
+// type ColorKeys = keyof Colors_;
+// type ValueOfFoo = ValueOf<Colors_>;
+
+// export const colorLabels = {
+//     green: 'Green',
+//     red: 'Red',
+//     blue: 'Blue',
+//     transparent: 'transparent',
+//     v: '#007cad',
+// } as const;
+
+// type ColorID = keyof typeof colorLabels;
+
+// export const colorIDs = Object.keys(colorLabels) as ColorID[];
+
 interface IBoxProps {
     children: React.ReactNode;
     m?: number;
@@ -30,8 +57,8 @@ interface IBoxProps {
 const Box = ({
     children,
     m = 0,
-    mt = 0,
     mb = 0,
+    mt = 0,
     mv = 0,
     mh = 0,
     p = 0,

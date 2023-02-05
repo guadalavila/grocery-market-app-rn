@@ -20,3 +20,9 @@ export const Colors = {
     grey300: '#8084A2',
     grey100: '#F9F9FA',
 };
+
+export const Colors_ = {
+    cherry: '#F9193F',
+    mars: '#F19037',
+    meteor: '#FFE3C8',
+} as const;

@@ -4,6 +4,9 @@ export const Strings = {
     welcome: 'Bienvenido!',
     viewMore: 'Ver Más',
     search: 'Buscar...',
+    total: 'Total',
+    subtotal: 'Subtotal',
+    delivery: 'Delivery / Extra',
 
     cart: {
         label: 'Carrito',

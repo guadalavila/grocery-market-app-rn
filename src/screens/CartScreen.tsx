@@ -9,11 +9,12 @@ import ItemCart from '../components/ItemCart/ItemCart';
 import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary';
 import { CartContext } from '../context/cart-context';
 import ItemEmpty from '../components/ItemEmpty/ItemEmpty';
+import Subtotal from '../components/Subtotal/Subtotal';
 
 interface Props extends NativeStackScreenProps<HomeStackParamList, 'CartScreen'> {}
 
 const CartScreen = ({ navigation }: Props) => {
-    const { deleteCart, cart, removeProduct } = useContext(CartContext);
+    const { deleteCart, cart, removeProduct, total } = useContext(CartContext);
     return (
         <Container>
             <Header text={Strings.cart.label} backButton iconRight='trash-bin' onPressButtonRight={deleteCart} />
@@ -23,10 +24,11 @@ const CartScreen = ({ navigation }: Props) => {
                         showsVerticalScrollIndicator={false}
                         data={cart}
                         renderItem={({ item }) => (
-                            <ItemCart item={item} onPressClose={() => removeProduct(item.product.id)} />
+                            <ItemCart item={item} onPressClose={() => removeProduct(item.product)} />
                         )}
                         keyExtractor={(item) => item.product.id}
                     />
+                    <Subtotal total={total} />
                     <ButtonPrimary
                         label={Strings.cart.checkout}
                         onPress={() => navigation.navigate('CheckoutScreen')}

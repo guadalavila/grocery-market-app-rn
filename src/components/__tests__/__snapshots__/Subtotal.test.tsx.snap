@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Subtotal component should match snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 8,
+      "marginBottom": 24,
+      "marginHorizontal": 24,
+      "marginTop": 8,
+      "padding": 8,
+      "paddingHorizontal": 16,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "display": undefined,
+        "flex": undefined,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "margin": 0,
+        "marginBottom": 8,
+        "marginHorizontal": 0,
+        "marginTop": 0,
+        "marginVertical": 0,
+        "padding": 0,
+        "paddingBottom": 0,
+        "paddingHorizontal": 0,
+        "paddingTop": 0,
+        "paddingVertical": 0,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontWeight": "600",
+        }
+      }
+    >
+      Subtotal
+    </Text>
+    <Text
+      testID="subtotal"
+    >
+      $
+      100
+      .00
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "display": undefined,
+        "flex": undefined,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "margin": 0,
+        "marginBottom": 8,
+        "marginHorizontal": 0,
+        "marginTop": 0,
+        "marginVertical": 0,
+        "padding": 0,
+        "paddingBottom": 0,
+        "paddingHorizontal": 0,
+        "paddingTop": 0,
+        "paddingVertical": 0,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontWeight": "600",
+        }
+      }
+    >
+      Delivery / Extra
+    </Text>
+    <Text>
+      $10.00
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {},
+        Object {},
+        Object {
+          "backgroundColor": "#C5C5C5",
+          "height": 0.2,
+          "marginHorizontal": 0,
+          "marginVertical": 16,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "display": undefined,
+        "flex": undefined,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "margin": 0,
+        "marginBottom": 8,
+        "marginHorizontal": 0,
+        "marginTop": 8,
+        "marginVertical": 0,
+        "padding": 0,
+        "paddingBottom": 0,
+        "paddingHorizontal": 0,
+        "paddingTop": 0,
+        "paddingVertical": 0,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#000000",
+          "fontSize": 18,
+          "fontWeight": "600",
+        }
+      }
+    >
+      Total
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+          },
+          Object {
+            "color": "#000000",
+            "fontSize": 22,
+            "fontWeight": "bold",
+          },
+        ]
+      }
+      testID="total"
+    >
+      $
+      110
+      .00
+    </Text>
+  </View>
+</View>
+`;

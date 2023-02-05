@@ -24,6 +24,9 @@ export const GlobalStyles = StyleSheet.create({
     main: {
         backgroundColor: Colors.background,
     },
+    center: {
+        alignSelf: 'center',
+    },
 });
 
 export const flex = (x: number) => {

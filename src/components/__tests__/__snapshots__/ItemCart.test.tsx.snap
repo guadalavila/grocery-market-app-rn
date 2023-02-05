@@ -8,8 +8,8 @@ exports[`test ItemCart component should match snapshot 1`] = `
       "borderRadius": 8,
       "flexDirection": "row",
       "marginHorizontal": 24,
-      "marginVertical": 8,
-      "padding": 16,
+      "marginVertical": 4,
+      "padding": 8,
       "paddingHorizontal": 24,
     }
   }
@@ -23,8 +23,9 @@ exports[`test ItemCart component should match snapshot 1`] = `
     }
     style={
       Object {
-        "height": 70,
-        "width": 100,
+        "alignSelf": "center",
+        "height": 50,
+        "width": 90,
       }
     }
     testID="image"
@@ -94,9 +95,8 @@ exports[`test ItemCart component should match snapshot 1`] = `
       style={
         Object {
           "color": "#000000",
-          "fontSize": 18,
+          "fontSize": 14,
           "fontWeight": "900",
-          "paddingTop": 16,
           "textAlign": "right",
         }
       }

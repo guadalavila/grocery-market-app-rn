@@ -14,6 +14,7 @@ import Container from '../components/Container/Container';
 import { Colors } from '../utils/Colors';
 import useRemoteConfig from '../hooks/useRemoteConfig';
 import useFavorite from '../hooks/useFavorite';
+import AddressSelected from '../components/AddressSelected/AddressSelected';
 
 interface Props extends NativeStackScreenProps<HomeStackParamList, 'HomeScreen'> {}
 
@@ -24,7 +25,8 @@ const HomeScreen = ({ navigation }: Props) => {
         <Container background={Colors.white}>
             <HeaderAvatar onPress={() => navigation.navigate('CartScreen')} />
             <ScrollView style={GlobalStyles.main} showsVerticalScrollIndicator={false}>
-                <SearchBar />
+                <AddressSelected onPress={() => {}} />
+                {/* <SearchBar /> */}
                 {smallText && bigText && <Banner smallText={smallText} bigText={bigText} />}
                 <Title
                     label={Strings.fruits.label}

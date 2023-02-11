@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ItemAddress component should match with snapchot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 8,
+      "marginBottom": 24,
+      "marginHorizontal": 24,
+      "marginTop": 8,
+      "padding": 8,
+      "paddingHorizontal": 16,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignSelf": undefined,
+        "backgroundColor": "transparent",
+        "borderRadius": undefined,
+        "display": undefined,
+        "flex": undefined,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "margin": 0,
+        "marginBottom": 0,
+        "marginHorizontal": 0,
+        "marginTop": 0,
+        "marginVertical": 0,
+        "padding": 0,
+        "paddingBottom": 0,
+        "paddingHorizontal": 0,
+        "paddingTop": 0,
+        "paddingVertical": 0,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignSelf": undefined,
+          "backgroundColor": "transparent",
+          "borderRadius": undefined,
+          "display": undefined,
+          "flex": undefined,
+          "flexDirection": undefined,
+          "justifyContent": undefined,
+          "margin": 0,
+          "marginBottom": 0,
+          "marginHorizontal": 0,
+          "marginTop": 0,
+          "marginVertical": 0,
+          "padding": 0,
+          "paddingBottom": 0,
+          "paddingHorizontal": 0,
+          "paddingTop": 0,
+          "paddingVertical": 0,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#000000",
+            "fontSize": 18,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Av Belgrano 1440
+         
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#000000",
+            "fontSize": 15,
+          }
+        }
+      >
+        Salta
+        , 
+        Argentina
+      </Text>
+      <Text>
+        4400
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "#E8E8E8",
+          "borderRadius": 6,
+          "display": undefined,
+          "flex": undefined,
+          "flexDirection": undefined,
+          "justifyContent": undefined,
+          "margin": 0,
+          "marginBottom": 0,
+          "marginHorizontal": 0,
+          "marginTop": 0,
+          "marginVertical": 0,
+          "padding": 0,
+          "paddingBottom": 0,
+          "paddingHorizontal": 0,
+          "paddingTop": 0,
+          "paddingVertical": 0,
+        }
+      }
+    >
+      <MockedIoniconsIcons
+        color="#68B984"
+        name="checkmark"
+        size={26}
+        testID="icon-check"
+      />
+    </View>
+  </View>
+</View>
+`;

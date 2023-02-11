@@ -44,5 +44,23 @@
                 "description": "Organicas",
                 "price": 10.0
             }
+        ],
+        "address": [ 
+            {
+                "id": "3xx68afc-c609-48d3-a4f8-fbd91aa97f67",
+                "address": "Av Belgrano 1440",
+                "city": "Salta",
+                "country": "Argentina",
+                "codePostal": "4400",
+                "selected": true
+            },
+            {
+                "id": "3aa68afc-c604-48d3-a4f8-fbd91aa97f67",
+                "address": "Ayacucho 1090",
+                "city": "Buenos Aires",
+                "country": "Argentina",
+                "codePostal": "1020",
+                "selected": false
+            }
         ]
 }

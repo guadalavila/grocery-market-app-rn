@@ -23,4 +23,5 @@ export type HomeStackParamList = {
     FavoritesScreen: undefined;
     AddressScreen: undefined;
     OrdersScreen: undefined;
+    AddAddressScreen: undefined;
 };

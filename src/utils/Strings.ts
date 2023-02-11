@@ -7,6 +7,8 @@ export const Strings = {
     total: 'Total',
     subtotal: 'Subtotal',
     delivery: 'Delivery / Extra',
+    change: 'Cambiar',
+    sendTo: 'Enviar a:',
 
     cart: {
         label: 'Carrito',

@@ -16,9 +16,10 @@ export const Colors = {
     greenLight: '#DEFAE8',
     redLight: '#FFE8E8',
     red: '#FF1C1E',
-    grey400: '#5F6173',
-    grey300: '#8084A2',
     grey100: '#F9F9FA',
+    grey200: '#E8E8E8',
+    grey300: '#8084A2',
+    grey400: '#5F6173',
 };
 
 export const Colors_ = {

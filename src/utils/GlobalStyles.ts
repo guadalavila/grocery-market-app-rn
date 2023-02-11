@@ -1,34 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { Colors } from './Colors';
 
-export const GlobalStyles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
-    shadowCard: {
-        shadowColor: '#000',
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
-        elevation: 4,
-    },
-    row: {
-        flexDirection: 'row',
-    },
-    justBtw: {
-        justifyContent: 'space-between',
-    },
-    main: {
-        backgroundColor: Colors.background,
-    },
-    center: {
-        alignSelf: 'center',
-    },
-});
-
 export const flex = (x: number) => {
     return {
         flex: x,
@@ -49,7 +21,7 @@ export const Sizes = {
 export const FontSize = {
     XS: 8,
     S: 10,
-    M: 14,
+    M: 15,
     L: 18,
     XL: 22,
     XXL: 26,
@@ -95,3 +67,47 @@ export const mv = (x: number) => {
         marginVertical: x,
     };
 };
+
+export const GlobalStyles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+    shadowCard: {
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 4,
+    },
+    row: {
+        flexDirection: 'row',
+    },
+    justBtw: {
+        justifyContent: 'space-between',
+    },
+    main: {
+        backgroundColor: Colors.background,
+    },
+    center: {
+        alignSelf: 'center',
+    },
+    title: {
+        color: Colors.black,
+        fontSize: FontSize.L,
+        fontWeight: '900',
+        marginBottom: Sizes.S,
+        marginHorizontal: Sizes.L,
+    },
+    containerWhite: {
+        backgroundColor: Colors.white,
+        borderRadius: Sizes.S,
+        paddingHorizontal: Sizes.M,
+        padding: Sizes.S,
+        marginTop: Sizes.S,
+        marginBottom: Sizes.L,
+        marginHorizontal: Sizes.L,
+    },
+});

@@ -27,6 +27,7 @@ import { View } from 'react-native';
 // type ColorID = keyof typeof colorLabels;
 
 // export const colorIDs = Object.keys(colorLabels) as ColorID[];
+type FlexAlignType = 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline';
 
 interface IBoxProps {
     children: React.ReactNode;
@@ -42,6 +43,9 @@ interface IBoxProps {
     pv?: number;
     background?: string;
     display?: 'flex' | 'none' | undefined;
+    alignContent?: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'space-between' | 'space-around' | undefined;
+    alignItems?: FlexAlignType | undefined;
+    alignSelf?: 'auto' | FlexAlignType | undefined;
     justifyContent?:
         | 'flex-start'
         | 'flex-end'
@@ -51,6 +55,7 @@ interface IBoxProps {
         | 'space-evenly'
         | undefined;
     flex?: number | undefined;
+    borderRadius?: number | undefined;
     flexDirection?: 'row' | 'column' | 'row-reverse' | 'column-reverse' | undefined;
 }
 
@@ -71,6 +76,8 @@ const Box = ({
     justifyContent,
     flex,
     flexDirection,
+    alignSelf,
+    borderRadius,
 }: IBoxProps) => {
     return (
         <View
@@ -90,6 +97,8 @@ const Box = ({
                 justifyContent: justifyContent,
                 flex: flex,
                 flexDirection: flexDirection,
+                alignSelf: alignSelf,
+                borderRadius: borderRadius,
             }}>
             {children}
         </View>

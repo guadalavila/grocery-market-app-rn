@@ -95,7 +95,7 @@ exports[`test ItemCart component should match snapshot 1`] = `
       style={
         Object {
           "color": "#000000",
-          "fontSize": 14,
+          "fontSize": 15,
           "fontWeight": "900",
           "textAlign": "right",
         }

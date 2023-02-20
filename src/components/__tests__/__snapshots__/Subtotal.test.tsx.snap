@@ -23,6 +23,7 @@ exports[`test Subtotal component should match snapshot 1`] = `
         "display": undefined,
         "flex": undefined,
         "flexDirection": "row",
+        "height": undefined,
         "justifyContent": "space-between",
         "margin": 0,
         "marginBottom": 8,
@@ -34,6 +35,7 @@ exports[`test Subtotal component should match snapshot 1`] = `
         "paddingHorizontal": 0,
         "paddingTop": 0,
         "paddingVertical": 0,
+        "width": undefined,
       }
     }
   >
@@ -63,6 +65,7 @@ exports[`test Subtotal component should match snapshot 1`] = `
         "display": undefined,
         "flex": undefined,
         "flexDirection": "row",
+        "height": undefined,
         "justifyContent": "space-between",
         "margin": 0,
         "marginBottom": 8,
@@ -74,6 +77,7 @@ exports[`test Subtotal component should match snapshot 1`] = `
         "paddingHorizontal": 0,
         "paddingTop": 0,
         "paddingVertical": 0,
+        "width": undefined,
       }
     }
   >
@@ -113,6 +117,7 @@ exports[`test Subtotal component should match snapshot 1`] = `
         "display": undefined,
         "flex": undefined,
         "flexDirection": "row",
+        "height": undefined,
         "justifyContent": "space-between",
         "margin": 0,
         "marginBottom": 8,
@@ -124,6 +129,7 @@ exports[`test Subtotal component should match snapshot 1`] = `
         "paddingHorizontal": 0,
         "paddingTop": 0,
         "paddingVertical": 0,
+        "width": undefined,
       }
     }
   >

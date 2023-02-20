@@ -35,6 +35,7 @@ exports[`test ItemAddress component should match with snapshot 1`] = `
         "display": undefined,
         "flex": undefined,
         "flexDirection": "row",
+        "height": undefined,
         "justifyContent": "space-between",
         "margin": 0,
         "marginBottom": 0,
@@ -46,6 +47,7 @@ exports[`test ItemAddress component should match with snapshot 1`] = `
         "paddingHorizontal": 0,
         "paddingTop": 0,
         "paddingVertical": 0,
+        "width": undefined,
       }
     }
   >
@@ -58,6 +60,7 @@ exports[`test ItemAddress component should match with snapshot 1`] = `
           "display": undefined,
           "flex": undefined,
           "flexDirection": undefined,
+          "height": undefined,
           "justifyContent": undefined,
           "margin": 0,
           "marginBottom": 0,
@@ -69,6 +72,7 @@ exports[`test ItemAddress component should match with snapshot 1`] = `
           "paddingHorizontal": 0,
           "paddingTop": 0,
           "paddingVertical": 0,
+          "width": undefined,
         }
       }
     >
@@ -109,6 +113,7 @@ exports[`test ItemAddress component should match with snapshot 1`] = `
           "display": undefined,
           "flex": undefined,
           "flexDirection": undefined,
+          "height": 30,
           "justifyContent": undefined,
           "margin": 0,
           "marginBottom": 0,
@@ -120,6 +125,7 @@ exports[`test ItemAddress component should match with snapshot 1`] = `
           "paddingHorizontal": 0,
           "paddingTop": 0,
           "paddingVertical": 0,
+          "width": 30,
         }
       }
     >
@@ -127,6 +133,11 @@ exports[`test ItemAddress component should match with snapshot 1`] = `
         color="#68B984"
         name="checkmark"
         size={26}
+        style={
+          Object {
+            "alignSelf": "center",
+          }
+        }
         testID="icon-check"
       />
     </View>

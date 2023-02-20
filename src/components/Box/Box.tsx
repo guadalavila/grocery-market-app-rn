@@ -57,6 +57,8 @@ interface IBoxProps {
     flex?: number | undefined;
     borderRadius?: number | undefined;
     flexDirection?: 'row' | 'column' | 'row-reverse' | 'column-reverse' | undefined;
+    width?: number | undefined;
+    height?: number | undefined;
 }
 
 const Box = ({
@@ -78,6 +80,8 @@ const Box = ({
     flexDirection,
     alignSelf,
     borderRadius,
+    width,
+    height,
 }: IBoxProps) => {
     return (
         <View
@@ -99,6 +103,8 @@ const Box = ({
                 flexDirection: flexDirection,
                 alignSelf: alignSelf,
                 borderRadius: borderRadius,
+                width: width,
+                height: height,
             }}>
             {children}
         </View>

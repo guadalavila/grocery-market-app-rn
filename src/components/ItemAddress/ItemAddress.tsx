@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Address } from '../../models/Address';
 import { Colors } from '../../utils/Colors';
@@ -9,11 +9,13 @@ import { styles } from './styles';
 
 interface IItemAddressProps {
     address: Address;
+    selected: boolean;
+    onPress: () => void;
 }
 
-const ItemAddress = ({ address: { address, city, country, codePostal, selected } }: IItemAddressProps) => {
+const ItemAddress = ({ address: { address, city, country, codePostal }, selected, onPress }: IItemAddressProps) => {
     return (
-        <View style={GlobalStyles.containerWhite}>
+        <TouchableOpacity testID='button' style={GlobalStyles.containerWhite} activeOpacity={0.7} onPress={onPress}>
             <Box flexDirection='row' justifyContent='space-between'>
                 <Box>
                     <Text style={styles.addressText}>{address} </Text>
@@ -22,13 +24,19 @@ const ItemAddress = ({ address: { address, city, country, codePostal, selected }
                     </Text>
                     <Text>{codePostal}</Text>
                 </Box>
-                {selected && (
-                    <Box alignSelf='center' background={Colors.grey200} borderRadius={6}>
-                        <Icon testID='icon-check' name='checkmark' size={26} color={Colors.primary} />
-                    </Box>
-                )}
+                <Box alignSelf='center' background={Colors.grey200} borderRadius={6} width={30} height={30}>
+                    {selected && (
+                        <Icon
+                            style={GlobalStyles.center}
+                            testID='icon-check'
+                            name='checkmark'
+                            size={26}
+                            color={Colors.primary}
+                        />
+                    )}
+                </Box>
             </Box>
-        </View>
+        </TouchableOpacity>
     );
 };
 

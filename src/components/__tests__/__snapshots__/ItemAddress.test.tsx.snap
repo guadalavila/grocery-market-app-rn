@@ -2,6 +2,16 @@
 
 exports[`test ItemAddress component should match with snapshot 1`] = `
 <View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
   style={
     Object {
       "backgroundColor": "#FFFFFF",
@@ -9,10 +19,12 @@ exports[`test ItemAddress component should match with snapshot 1`] = `
       "marginBottom": 24,
       "marginHorizontal": 24,
       "marginTop": 8,
+      "opacity": 1,
       "padding": 8,
       "paddingHorizontal": 16,
     }
   }
+  testID="button"
 >
   <View
     style={

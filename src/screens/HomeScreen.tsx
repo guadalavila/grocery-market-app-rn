@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FlatList, ScrollView } from 'react-native';
 import Banner from '../components/Banner/Banner';
 import HeaderAvatar from '../components/HeaderAvatar/HeaderAvatar';
@@ -15,12 +15,20 @@ import { Colors } from '../utils/Colors';
 import useRemoteConfig from '../hooks/useRemoteConfig';
 import useFavorite from '../hooks/useFavorite';
 import AddressSelected from '../components/AddressSelected/AddressSelected';
+import useAddress from '../hooks/useAddress';
 
 interface Props extends NativeStackScreenProps<HomeStackParamList, 'HomeScreen'> {}
 
 const HomeScreen = ({ navigation }: Props) => {
     const { smallText, bigText } = useRemoteConfig();
+    const { setAddress, setCurrentAddress } = useAddress();
     useFavorite();
+
+    useEffect(() => {
+        setAddress(data.address);
+        setCurrentAddress(data.address[0]);
+    }, []);
+
     return (
         <Container background={Colors.white}>
             <HeaderAvatar onPress={() => navigation.navigate('CartScreen')} />
